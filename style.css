@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #83a4d4;
+    color:white;
+    font-family: 'Quicksand';
+}
+
+#hangman{
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin: 20px auto;
+    background-color: rgba(255,255,255,0.9);
+    border:2px solid black;
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+    letter-spacing: 15px;
+    font-weight: 200;
+}
+
+.word{
+    display: flex;
+    justify-content: center;
+}
+
+.letter-box{
+    border-bottom: 1px solid black;
+    width: 60px;
+    text-align: center;
+}
+
+.letter-box:not(:last-child){
+    margin-right: 20px;
+}
+
+.word-letter{
+    font-size: 70px;
+    color:black;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* RESET BUTTON */
+
+.reset{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.reset button{
+    border: none;
+    background: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: inherit;
+    outline:none;
+}
+
+.reset button:hover{
+    background: rgba(255,255,255,0.9);
+    transform: translateY(-2px);
+}
+
+.reset button:active{
+    transform: translateY(0);
+}
+
+
+/* ALPHABET */
+
+.alphabet{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.letter{
+    height: 50px;
+    width: 60px;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    padding-top: 10px;
+    background-color: #ccc;
+    margin: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 5px;
+    text-align:center;
+}
+
+.letter:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.popup{
+    height: 100vh;
+    width:100%;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    background-color:rgba(0,0,0, 0.8);
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+
+.popup__content{
+    background-color: #fff;
+    color:black;
+    box-shadow: 0 2rem 4rem rgba(0,0,0, 0.2 );
+    border-radius: 3px;
+    width: 50%;
+}
+
+#result{
+    text-align: center;
+    font-size: 80px;
+    color:green;
+    margin-top: 30px;
+}
+
+.popup__btn-box{
+    text-align: center;
+}
+
+.popup__btn{
+    border:none;
+    background: #3D84EA;
+    color:white;
+    border-radius: 100px;
+    padding: 17px 60px;
+    margin: 40px 0;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.popup__btn:hover{
+    transform: translateY(-2px);
+    background-color: rgba(61,132,234,0.9);
+}
+
+.popup__btn:active{
+    transform: translateY(0);
+}

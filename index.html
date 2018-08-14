@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Hangman Game</title>
+</head>
+<body>
+    
+    <h2 class="title">Hangman Game</h2>
+
+    <div class="word">
+
+        <!-- <div class="letter-box">
+            <span class="word-letter">
+                C
+            </span>
+        </div>
+
+        <div class="letter-box">
+            <span class="word-letter">
+                A
+            </span>
+        </div>
+
+        <div class="letter-box">
+            <span class="word-letter">
+                T
+            </span>
+        </div> -->
+
+    </div>
+
+    <div class="reset">
+        <button id="reset">RESET GAME</butto>
+    </div>
+
+    <canvas id="hangman">
+        
+    </canvas>
+
+    <div class="alphabet">
+        <div class="upkeys">
+            <div class="letter">A</div>
+            <div class="letter">B</div>
+            <div class="letter">C</div>
+            <div class="letter">D</div>
+            <div class="letter">E</div>
+            <div class="letter">F</div>
+            <div class="letter">G</div>
+            <div class="letter">H</div>
+            <div class="letter">I</div>
+            <div class="letter">J</div>
+            <div class="letter">K</div>
+            <div class="letter">L</div>
+            <div class="letter">M</div>
+        </div>
+
+        <div class="downkeys">
+            <div class="letter">N</div>
+            <div class="letter">O</div>
+            <div class="letter">P</div>
+            <div class="letter">Q</div>
+            <div class="letter">R</div>
+            <div class="letter">S</div>
+            <div class="letter">T</div>
+            <div class="letter">U</div>
+            <div class="letter">V</div>
+            <div class="letter">W</div>
+            <div class="letter">X</div>
+            <div class="letter">Y</div>
+            <div class="letter">Z</div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <h2 id="result"></h2>
+            <div class="popup__btn-box">
+                <button id="playagain" class="popup__btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
